@@ -14,12 +14,18 @@
     "require": {
         "php": ">=5.6.0",
         "psr/log": "~1.0",
-        "elasticsearch/elasticsearch": "5.4.*"
+        "elasticsearch/elasticsearch": "dev-es5_php8"
     },
     "require-dev": {
         "aws/aws-sdk-php": "~3.0",
         "guzzlehttp/guzzle": "~6.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dave-Clark-Design-Associates/elasticsearch-php"
+        }
+    ],
     "suggest": {
         "aws/aws-sdk-php": "Allow using IAM authentication with Amazon ElasticSearch Service",
         "egeloen/http-adapter": "Allow using httpadapter transport",
