@@ -1,14 +1,16 @@
-.DS_Store
+# IDES
+.vscode
 .idea
+.settings
+# Misc
+.DS_Store
 *.iml
 .vagrant
 .php_cs.cache
-
 cache.properties
 /nbproject
 build
 atlassian-ide-plugin.xml
-.settings
 /vendor
 composer.lock
 composer.phar

@@ -14,7 +14,7 @@ use Elastica\Query\GeoDistance;
 use Elastica\Query\HasChild;
 use Elastica\Query\HasParent;
 use Elastica\Query\Ids;
-use Elastica\Query\Match;
+use Elastica\Query\ElasticMatch;
 use Elastica\Query\MatchAll;
 use Elastica\Query\MatchNone;
 use Elastica\Query\MoreLikeThis;
@@ -64,11 +64,11 @@ class Query implements DSL
      * @param string $field
      * @param mixed  $values
      *
-     * @return Match
+     * @return ElasticMatch
      */
     public function match($field = null, $values = null)
     {
-        return new Match($field, $values);
+        return new ElasticMatch($field, $values);
     }
 
     /**
