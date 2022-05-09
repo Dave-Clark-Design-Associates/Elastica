@@ -31,6 +31,17 @@ class ElasticMatch extends AbstractQuery
     }
 
     /**
+     * Due to us renaming the class to be compatible with php8 we need to reset
+     * the name of the Query back to what ES5.6 expects it to be
+     * 
+     * @return string
+     */
+    public function _getBaseName()
+    {
+        return 'match';
+    }
+
+    /**
      * Sets a param for the message array.
      *
      * @param string $field
